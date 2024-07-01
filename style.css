@@ -233,3 +233,98 @@ span{
         width: calc(100% + 8px);
     }
 }
+.goals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background: var(--bg-second-bg-color);
+    color: var(--text-color);
+}
+.goal-img{
+    border-radius: 50%;
+}
+.goal-img img{
+    position: relative;
+    width: 30vw;
+    border-radius: 50%;
+    top: 1rem;
+    cursor: pointer;
+}
+.goal-heading{
+    text-align: center;
+    font-size: 8rem;
+}
+.goals-content h2{
+text-align: left;
+line-height: 1.5;
+}
+.goals-content h3{
+    font-size: 2.6rem;
+}
+.goals-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0rem;
+}
+.goals-content .text-animation span::before{
+    content: 'Writter';
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+.goals-content .text-animation span::after{
+    content: '';
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% +8px);
+    height: 100%;
+    border-left: 2px solid #f1f1f1;
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-color);
+    width: 50px;
+}
+
+/* styling project section */
+
+.projects{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.project-heading{
+    margin-bottom: 5rem;
+    color: var(--text-color);
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.project-box{
+    border: 1px solid var(--main-color);
+    height: 300px;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.project-box:hover{
+    background: var(--main-color);
+    color: var(--second-text-color);
+    transform: scale(1.03);
+}
+.project-box .project-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: baseline;
+    padding: ;
+}
