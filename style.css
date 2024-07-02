@@ -18,7 +18,7 @@
 }
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 body{
     background: var(--bg-color);
@@ -251,7 +251,7 @@ span{
     top: 1rem;
     cursor: pointer;
 }
-.goal-heading{
+.heading{
     text-align: center;
     font-size: 8rem;
 }
@@ -291,6 +291,9 @@ line-height: 1.5;
     background: var(--bg-color);
     width: 50px;
 }
+.goals .btn{
+    margin-top: 2rem;
+}
 
 /* styling project section */
 
@@ -298,7 +301,7 @@ line-height: 1.5;
     background: var(--bg-color);
     color: var(--text-color);
 }
-.project-heading{
+.projects h2{
     margin-bottom: 5rem;
     color: var(--text-color);
 }
@@ -326,5 +329,160 @@ line-height: 1.5;
     text-align: left;
     justify-content: center;
     align-items: baseline;
-    padding: ;
+    padding: 5rem;
+}
+.project-info h4{
+    font-size: 36px;
+    font-weight: 500;
+}
+.project-info p{
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto;
+}
+.contact{
+    background-color: var(--bg-second-bg-color);
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+}
+
+/* footer section styling */
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--main-color);
+}
+.footer .socials{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--second-text-color);
+}
+.footer .socials a{
+    font-size: 25px;
+    color: var(--second-text-color);
+    border: 2px solid var(--second-text-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+.footer .socials a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--second-text-color);
+    color: var(--main-color);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: var(--second-text-color);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid white;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--second-text-color);
+}
+
+/* responsive styling */
+@media(max-width: 1285px){
+    html{
+        font-size: 55px;
+    }
+    .home p{
+        width: 700px;
+    }
+    .home img{
+        width: 12vw;
+    }
+    .project-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+}
+@media(max-width: 991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media screen and (max-width:895px) {
+    .menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--second-text-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    
 }
