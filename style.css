@@ -137,6 +137,7 @@ span{
 .social-icons a:hover{
     transform: scale(1.3)translateY(0.5px);
     background-color: var(--main-color);
+    color: var(--second-text-color);
 }
 .btn{
     display: inline-block;
@@ -193,7 +194,7 @@ span{
     }
     21%,
     40%{
-        content: "Project Manager"
+        content: "Tehnical Writer"
     }
     41%,
     60%{
@@ -201,11 +202,11 @@ span{
     }
     61%,
     80%{
-        content: 'Content Creator';
+        content: 'Techpreneur';
     }
     81%,
     100%{
-        content: 'Virtual assistant';
+        content: 'Public Speaker';
     }
 
 }
@@ -233,7 +234,7 @@ span{
         width: calc(100% + 8px);
     }
 }
-.goals{
+.about{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,23 +256,23 @@ span{
     text-align: center;
     font-size: 8rem;
 }
-.goals-content h2{
+.about-content h2{
 text-align: left;
 line-height: 1.5;
 }
-.goals-content h3{
+.about-content h3{
     font-size: 2.6rem;
 }
-.goals-content p{
+.about-content p{
     font-size: 1.6rem;
     margin: 2rem 0rem;
 }
-.goals-content .text-animation span::before{
+.about-content .text-animation span::before{
     content: 'Writter';
     color: var(--main-color);
     animation: words 20s infinite;
 }
-.goals-content .text-animation span::after{
+.about-content .text-animation span::after{
     content: '';
     background-color: var(--bg-color);
     position: absolute;
@@ -291,39 +292,39 @@ line-height: 1.5;
     background: var(--bg-color);
     width: 50px;
 }
-.goals .btn{
+.about .btn{
     margin-top: 2rem;
 }
 
 /* styling project section */
 
-.projects{
+.goals{
     background: var(--bg-color);
     color: var(--text-color);
 }
-.projects h2{
+.goals h2{
     margin-bottom: 5rem;
     color: var(--text-color);
 }
-.project-container{
+.goals-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2rem;
 }
-.project-box{
+.goals-box{
     border: 1px solid var(--main-color);
     height: 300px;
     border-radius: 1em;
     cursor: pointer;
     transition: 0.3s ease;
 }
-.project-box:hover{
+.goals-box:hover{
     background: var(--main-color);
     color: var(--second-text-color);
     transform: scale(1.03);
 }
-.project-box .project-info{
+.goals-box .goal-info{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -331,11 +332,11 @@ line-height: 1.5;
     align-items: baseline;
     padding: 5rem;
 }
-.project-info h4{
+.goal-info h4{
     font-size: 36px;
     font-weight: 500;
 }
-.project-info p{
+.goal-info p{
     margin-top: 2rem;
     font-size: 20px;
     font-weight: 400;
@@ -445,7 +446,7 @@ line-height: 1.5;
     .home img{
         width: 32vw;
     }
-    .project-container{
+    .goals-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
@@ -502,21 +503,21 @@ line-height: 1.5;
         width: 70vw;
         margin-top: 4rem;
     }
-    .goals{
+    .about{
         flex-direction: column-reverse;
     }
-    .goals-content{
+    .about-content{
         margin: 0 2rem 4rem;
     }
-    .goals img{
+    .about img{
         width: 64vw;
         margin-top: 1rem;
         margin-bottom: 3rem;
     }
-    .projects h2{
+    .goals h2{
         margin-bottom: 3rem;
     }
-    .project-container{
+    .goals-container{
         grid-template-columns: repeat(1,1fr);
     }
     

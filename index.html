@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
     <link rel="stylesheet" href="style.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <a href="#home" class="logo">Precious<span>Bamawo</span></a>
       <!-- put menu icon from boxicon id="menu"-->
-      <i class='bx bx-menu' id="menu-icon"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
         <a href="#goals">Goals</a>
-        <a href="#project">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -26,93 +29,90 @@
         </div>
         <div class="home-content">
           <h3>Hi</h3>
-          <h1>Its <span>Precious</span></h1>
+          <h1 data-test-id="slackDisplayName">Its <span>PreciousB</span></h1>
           <h3 class="text-animation">I'm a <span></span></h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam
-            repudiandae aliquam ab tempora harum architecto molestiae quaerat
-            quod sint?
+            A Frontend web developer who takes pride in bringing your figma mockup design to life.
           </p>
           <div class="social-icons">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#"><i class="bx bxl-slack"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
           </div>
           <button><a href="" class="btn">Hire Me</a></button>
         </div>
       </section>
-      <section class="goals" id="goals">
-        <div class="goals-content">
-          <h2 class="heading"><span>My</span> Goals</h2>
+
+      <!-- About section start here -->
+      <section class="about" id="about">
+        <div class="about-content">
+          <h2 class="heading"><span>About</span> Me</h2>
           <h3 class="text-animation">
             <span></span>
           </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            doloribus repellat alias earum iste, eos vel voluptatibus eaque quod
-            distinctio?
+          <p data-test-id="slackDisplayName">Slack Name:PreciousB
           </p>
-          <a href="" class="btn">Know More</a>
+          <p data-test-id="slackEmail">Slack Email: preciousbamawo2015@gmail.com</p>
+          <p id="time" data-test-id="currentTimeUTC"></p>
+          <p id="day" data-test-id="currentDayOfTheWeeek"></p>
+          <a href="https://www.keyword.dog" data-testid="keywordLink" class="btn">Dog Lover</a>
         </div>
         <div class="goal-img">
-          <img src="" alt="" />
+          <img src="" alt="" data-test-id="slackProfilePicture" />
         </div>
       </section>
-      <section class="projects" id="project">
-        <h2 class="heading">Projects</h2>
-        <div class="project-container">
-          <div class="project-box">
-            <div class="project-info">
+
+      <!-- goals section start here -->
+      <section class="goals" id="goals">
+        <h2 class="heading">Goals</h2>
+        <div class="goals-container">
+          <div class="goals-box">
+            <div class="goal-info">
               <h4>Web Developer</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, iste!
+                To become a mid-level web developer with over 80 sucessful project implementation.
               </p>
             </div>
           </div>
-          <div class="project-box">
-            <div class="project-info">
+          <div class="goals-box">
+            <div class="goal-info">
               <h4>Technical Writing</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, iste!
+                To Become proficient in technical article writing that are SEO friendly, optimized and easily found on the <a href="https://www.scrapeanyweb.site" data-testid="scrapeanywebLink">web</a>
               </p>
             </div>
           </div>
-          <div class="project-box">
-            <div class="project-info">
-              <h4>Blogging</h4>
+          <div class="goals-box">
+            <div class="goal-info">
+              <h4>Internship</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, iste!
+                To Complete the 6-8weeks internship with HNG cohort 11 and get to stage 10 and make it to the top finalist in frontend development track.
+              </p>
+              <p>Know more about HNG <a href="https://www.hng.tech/learn" data-testid="hngLink">Here</a></p>
+            </div>
+          </div>
+          <div class="goals-box">
+            <div class="goal-info">
+              <h4>Public Speaker</h4>
+              <p>
+                To organize, moderate and talk at tech events and conferences encouraging more women into tech.
               </p>
             </div>
           </div>
-          <div class="project-box">
-            <div class="project-info">
-              <h4>Web Developer</h4>
+          <div class="goals-box">
+            <div class="goal-info">
+              <h4>Mentor</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, iste!
+                To start a mentorship program and mentor 100 girls and women in tech.
               </p>
             </div>
           </div>
-          <div class="project-box">
-            <div class="project-info">
-              <h4>Web Developer</h4>
+          <div class="goals-box">
+            <div class="goal-info">
+              <h4>Techpreneur</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, iste!
-              </p>
-            </div>
-          </div>
-          <div class="project-box">
-            <div class="project-info">
-              <h4>Web Developer</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, iste!
+                To become a co-founder of a tech start up on using tech to solve environmental issues in tune to SDG's goal.
               </p>
             </div>
           </div>
@@ -121,22 +121,33 @@
       <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Enter your full name" required>
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Phone number">
-                <input type="text" placeholder="Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your full name" required />
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Phone number" />
+            <input type="text" placeholder="Subject" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
         </form>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="socials"></div>
+      <div class="socials">
+        <a href="#"><i class="bx bxl-slack"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+      </div>
       <ul class="list">
         <li><a href="">FAQ</a></li>
         <li><a href="">Services</a></li>
