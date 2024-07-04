@@ -6,11 +6,27 @@ let timeDisplay = document.querySelector("#time");
 let dayOfTheWeek = document.querySelector("#day");
 let date = new Date();
 
-let hour = date.getHours();
-let minute = date.getMinutes();
-let seconds = date.getSeconds();
-let time = `${hour}:${minute}:${seconds}`;
-timeDisplay.innerHTML = "Current Time: " + time;
+// let hour = date.getHours();
+// let minute = date.getMinutes();
+// let seconds = date.getSeconds();
+function timeUpdate (){
+  let currentTimeInSec= date.getTime()
+
+  let timeInUTC =date.toUTCString() 
+  // console.log(timeInUTC);
+  timeDisplay.innerHTML = timeInUTC
+}
+setInterval(timeUpdate, 1000);
+
+
+// let time = `${hour}:${minute}:${seconds}`;
+
+// setInterval(time, 1000)
+// 
+// setTimeout((time) => {
+//   return time
+// }, 1000);
+
 
 let weekday = [
   "Sunday",
